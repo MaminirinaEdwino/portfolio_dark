@@ -1,0 +1,72 @@
+* {
+  padding: 0%;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0rem;
+}
+header nav {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  gap: 1rem;
+}
+header nav a {
+  text-decoration: none;
+}
+
+#welcome {
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+#welcome span {
+  font-size: 2rem;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  height: auto;
+  margin: auto;
+  left: -2rem;
+}
+
+@keyframes welcome {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes loading {
+  0% {
+    width: 0%;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
